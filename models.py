@@ -3,7 +3,7 @@ from database import Base
 from datetime import datetime
 
 class Dish(Base):
-    __tablename__ = "hf_dish"
+    __tablename__ = "hb_dish"
 
     id = Column(Integer, primary_key=True, index=True)
     title = Column(String)
