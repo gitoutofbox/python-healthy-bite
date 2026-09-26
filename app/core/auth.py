@@ -6,7 +6,7 @@ import os
 from fastapi import Depends, HTTPException
 from fastapi.security import OAuth2PasswordBearer
 
-oauth2Schema = OAuth2PasswordBearer(tokenUrl="login")
+oauth2Schema = OAuth2PasswordBearer(tokenUrl="users/login")
 
 JWT_SECRET_KEY = os.getenv("SECRET_KEY")
 ALGORITHM = os.getenv("ALGORITHM", "HS256")
